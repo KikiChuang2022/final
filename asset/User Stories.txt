@@ -1,0 +1,6 @@
+As a new user, I want to register for login and complete my profile.
+As a logged-in user, I want to be able to update the profile at “Profile” page.
+As a logged-in user, I want to be able to change the password at “Profile” page.
+As a user, I want to view others’ profiles at “Feed” page.
+As a user, I want to accept or decline matches at “Feed” page.
+As a user, if I match with other users, I can get the contact information such as email to contact him/her at “Your Matches” page.
