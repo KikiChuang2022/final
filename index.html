@@ -10,8 +10,77 @@
 </head>
 
 <body>
-  <div class="sign-in-or-sign-out"></div>
- 
+  
+  <div class="flex">
+    <div class="left-column w-1/3 overscroll-contain ">
+        <div class="sign-in-or-sign-out"></div>
+        <hr>
+        <div class="profile flex flex-wrap">
+
+        </div>
+
+        <h1 class="flex-1 text-black-500 font-bold text-center text-sm">Matches</h1>
+        <hr>
+        <div class="matches grid grid-cols-3 gap-4">
+          <div class=" p-4">
+            <img src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/159935581_10158958325603516_8983528229825100225_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=beHAK2vlLNwAX-dxqXM&_nc_ht=scontent-ort2-1.xx&oh=6fac33657ba4fd875489bd276cb9fc7a&oe=6075702E" class="w-full">
+            <a href="#" class="watched-button block text-center text-white bg-green-500 mt-4 px-4 py-2 rounded">I've watched this!</a>
+          </div>
+
+          <div class=" p-4">
+            <img src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/159935581_10158958325603516_8983528229825100225_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=beHAK2vlLNwAX-dxqXM&_nc_ht=scontent-ort2-1.xx&oh=6fac33657ba4fd875489bd276cb9fc7a&oe=6075702E" class="w-full">
+            <a href="#" class="watched-button block text-center text-white bg-green-500 mt-4 px-4 py-2 rounded">I've watched this!</a>
+          </div>
+          <div class=" p-4">
+            <img src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/159935581_10158958325603516_8983528229825100225_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=beHAK2vlLNwAX-dxqXM&_nc_ht=scontent-ort2-1.xx&oh=6fac33657ba4fd875489bd276cb9fc7a&oe=6075702E" class="w-full">
+            <a href="#" class="watched-button block text-center text-white bg-green-500 mt-4 px-4 py-2 rounded">I've watched this!</a>
+          </div>
+          <div class=" p-4">
+            <img src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/159935581_10158958325603516_8983528229825100225_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=beHAK2vlLNwAX-dxqXM&_nc_ht=scontent-ort2-1.xx&oh=6fac33657ba4fd875489bd276cb9fc7a&oe=6075702E" class="w-full">
+            <a href="#" class="watched-button block text-center text-white bg-green-500 mt-4 px-4 py-2 rounded">I've watched this!</a>
+          </div>
+          <div class=" p-4">
+            <img src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/159935581_10158958325603516_8983528229825100225_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=beHAK2vlLNwAX-dxqXM&_nc_ht=scontent-ort2-1.xx&oh=6fac33657ba4fd875489bd276cb9fc7a&oe=6075702E" class="w-full">
+            <a href="#" class="watched-button block text-center text-white bg-green-500 mt-4 px-4 py-2 rounded">I've watched this!</a>
+          </div>
+          <div class=" p-4">
+            <img src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/159935581_10158958325603516_8983528229825100225_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=beHAK2vlLNwAX-dxqXM&_nc_ht=scontent-ort2-1.xx&oh=6fac33657ba4fd875489bd276cb9fc7a&oe=6075702E" class="w-full">
+            <a href="#" class="watched-button block text-center text-white bg-green-500 mt-4 px-4 py-2 rounded">I've watched this!</a>
+          </div>
+
+        </div>
+    </div>
+
+    <div class="right column w-2/3">
+    
+      <div class="py-8 md:px-32 px-0 md:w-1/2 w-full mx-auto">
+    
+        <div class="flex items-center">
+          <div class="md:mx-0 mx-4"><span class="font-bold text-2xl bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-purple-500">Kelloggram</span></div>
+          <div class="ml-auto text-sm sign-in-or-sign-out"></div>
+        </div>
+    
+        <div class="posts">
+          <!-- Posts rendered from JavaScript -->
+        </div>
+    
+        <!-- New post form -->
+        <div>
+          <form class="w-full mt-8">
+            <input type="text" id="image-url" name="image-url" placeholder="Image URL" class="my-2 p-2 w-64 border border-gray-400 rounded shadow-xl focus:outline-none focus:ring-purple-500 focus:border-purple-500">
+            <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-xl">Post</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="matches p-16 md:flex md:flex-wrap">
+
+
+    <!-- JavaScript puts stuff here -->
+  </div>
   <!-- Put the Firebase config here -->
   <!-- The core Firebase JS SDK is always required and must be listed first -->
   <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
@@ -21,7 +90,15 @@
 
   <script>
     // Your web app's Firebase configuration
-    var firebaseConfig = {} // replace
+    // var firebaseConfig = {} // replace
+    var firebaseConfig = {
+    apiKey: "AIzaSyDvZX95Y84UprjGO_W0H0QNnuumu11nNFg",
+    authDomain: "kiei-final-701a3.firebaseapp.com",
+    projectId: "kiei-final-701a3",
+    storageBucket: "kiei-final-701a3.appspot.com",
+    messagingSenderId: "824038857443",
+    appId: "1:824038857443:web:516f6bfa13fb260bed43d6"
+  };
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
   </script>
