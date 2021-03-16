@@ -14,14 +14,11 @@ firebase.auth().onAuthStateChanged(async function(user) {
       document.location.href = 'index.html'
     })
 
-    
     renderMatches(user)
     // let response = await fetch(`/.netlify/functions/getMatches?userid=abc`)
     // let posts = await response.json()
     // console.log(response)
     // console.log(posts)
-
-
 
     renderDailyPick(user)
     // response = await fetch(`/.netlify/functions/getDailyPick?userid=123455`)
@@ -56,12 +53,13 @@ firebase.auth().onAuthStateChanged(async function(user) {
       method: 'POST',
       body: JSON.stringify({
         userId: user.uid,
-        name: "David Liu",
+        name: user.displayName,
+        email: user.email,
         profilePic: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fobserver.com%2F2020%2F09%2Fpierce-brosnan-lists-malibu-beach-home-for-sale-orchid-house-pictures%2F&psig=AOvVaw0S0Ig6LnRnVsRyxL_2WOm0&ust=1615923414974000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCODPsYKGs-8CFQAAAAAdAAAAABAJ",
-        description: "This is David",
-        email: "test@email.com"
+        description: "This is David"
       })
     })
+    console.log("saveProfile")
     console.log(response)
 
 
