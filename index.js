@@ -166,8 +166,8 @@ async function renderDailyPick(user){
 
       <div class="md:flex"> 
         <div class="mx-2 my-4 pt-2 pb-2 w-1/4 text-center text-xl text-gray-50 font-extrabold  border-2 rounded-lg">
-          <div class ="bg-blue-700">V</div>
-          <div class ="bg-red-700">X</div>
+          <div class ="bg-blue-500">V</div>
+          <div class ="bg-red-500">X</div>
         </div>
       </div>
     `)
