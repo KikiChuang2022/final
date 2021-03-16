@@ -124,8 +124,6 @@ async function renderMatches(user){
   console.log(response)
   console.log(matches)
 
-  // from Gino- show match
-
   for (let i = 0; i < user.length; i++) {
     let leg = user[i]
     document.querySelector('.matches').insertAdjacentHTML('beforeend', `
@@ -139,6 +137,9 @@ async function renderMatches(user){
       </div>
     `)
   }
+
+  // from Gino- show match
+
 
 
 }
