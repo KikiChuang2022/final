@@ -10,7 +10,10 @@ exports.handler = async function(event) {
   let sourceUserId = event.queryStringParameters.userid
 
   
-  let querySnapshot = await db.collection('likes').doc(userid).get()
+  let querySnapshot = await db.collection('likes')
+  .where('sourceUserId', '==',sourceUserId )
+  .get()
+  // .doc(sourceUserId).get()
 
 
   let numberOfLikes = querySnapshot.size
